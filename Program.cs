@@ -36,24 +36,35 @@ volver a jugar y borrar consola, de lo contrario, finalizar el programa.*/
         int aleatorio1 = numero.Next(0, 50);
         int aleatorio2 = numero.Next(0, 100);
         int aleatorio3 = numero.Next(0, 200);
+        int numero1 = 51;
+        int numero2 = 101;
+        int numero3 = 201;
         int jugadores;
         string juego1;
         string juego2;
         string juego3;
 
         Console.WriteLine("Jugemos Adivina el número");
-        Console.WriteLine("escoge 2 Jugadores - 3 jugadores - 4 jugadores");
+        Console.WriteLine("escoge: 2 Jugadores - 3 jugadores - 4 jugadores");
         jugadores = int.Parse(Console.ReadLine());
+        Console.WriteLine($"haz seleccionado {jugadores} Jugadores");
 
-        for(int i= 1; i<=jugadores; i++){
+        if ( jugadores == 2 ) {
 
-            Console.WriteLine($"haz seleccionado {jugadores} Jugadores");
+            while (aleatorio1 != numero1)
+            {
+                numero1 = int.Parse(Console.ReadLine());
+                if (numero1 > aleatorio1) Console.WriteLine("Es MENOR");
+                if (numero1 < aleatorio1) Console.WriteLine("Es MAYOR");
+                if (numero1 < aleatorio1) Console.WriteLine("¡HAS GANADO!");
 
-            if(jugadores == 2) {
+            }
+           
+        }
 
+                  
 
             
-            }
 
         }
 
