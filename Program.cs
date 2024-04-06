@@ -36,8 +36,16 @@ volver a jugar y borrar consola, de lo contrario, finalizar el programa.*/
         int aleatorio1 = numero.Next(0, 50);
         int aleatorio2 = numero.Next(0, 100);
         int aleatorio3 = numero.Next(0, 200);
+        int jugadores;
+        string juego1;
+        string juego2;
+        string juego3;
 
-        
+        Console.WriteLine("Jugemos Adivina el número");
+        Console.WriteLine("escoge 2 Jugadores - 3 jugadores - 4 jugadores");
+        jugadores = int.Parse(Console.ReadLine());
+
+        for
 
 
 
