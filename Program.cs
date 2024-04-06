@@ -45,7 +45,17 @@ volver a jugar y borrar consola, de lo contrario, finalizar el programa.*/
         Console.WriteLine("escoge 2 Jugadores - 3 jugadores - 4 jugadores");
         jugadores = int.Parse(Console.ReadLine());
 
-        for
+        for(int i= 1; i<=jugadores; i++){
+
+            Console.WriteLine($"haz seleccionado {jugadores} Jugadores");
+
+            if(jugadores == 2) {
+
+
+            
+            }
+
+        }
 
 
 
