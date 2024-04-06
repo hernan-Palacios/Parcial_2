@@ -42,20 +42,18 @@ internal class Program
         int intentos = 0;
         int jugadores;
         bool volver = true;
-        string juego1;
-        string juego2;
-        string juego3;
 
         Console.WriteLine("Jugemos Adivina el número");
         Console.WriteLine("escoge: 2 Jugadores - 3 jugadores - 4 jugadores");
         jugadores = int.Parse(Console.ReadLine());
-        Console.WriteLine($"haz seleccionado {jugadores} Jugadores");
+        
 
         while (volver)
         {
             string siguiente;
+            Console.WriteLine($"haz seleccionado {jugadores} Jugadores");
 
-        if ( jugadores == 2 )
+            if ( jugadores == 2 )
         {
             Console.WriteLine("Empecemos a jugar e ingresa numeros de 0 a 50");
             while (aleatorio1 != numero1)
@@ -66,18 +64,13 @@ internal class Program
                 if (numero1 < aleatorio1) Console.WriteLine("Es MAYOR");
                 if (numero1 == aleatorio1) Console.WriteLine("¡HAS GANADO!");
 
-
-                Console.WriteLine("¿Quieres un tirito mas?");
-                /*Console.WriteLine("ingresa si");
-                respuesta = (Console.ReadLine());
-                if (respuesta == aleatorio2*/
-
                 
             }
 
+             Console.WriteLine("¿Quieres un tirito mas?");
             
-                //Console.Clear();
-                //Console.WriteLine($"selecciona los jugadores {jugadores} Jugadores");
+                
+                
         }
         if (jugadores == 3)
         {
@@ -92,9 +85,7 @@ internal class Program
                                
             }
             
-            Console.WriteLine("Quieres un tirito mas");
-            Console.Clear();
-            Console.WriteLine($"selecciona los jugadores {jugadores} Jugadores");
+            
         }
         if (jugadores == 4)
         {
@@ -109,15 +100,21 @@ internal class Program
 
             }
             
+            
+            
+        }
+
             Console.WriteLine("Quieres un tirito mas");
-            Console.Clear();
-            Console.WriteLine($"selecciona los jugadores {jugadores} Jugadores");
-        }
-
-
-         siguiente = Console.ReadLine();
+            siguiente = Console.ReadLine();
             if (siguiente == "n") volver = false;
+            
+            //Console.Clear();
+            
+       
         }
+
+
+
     }
 
 
