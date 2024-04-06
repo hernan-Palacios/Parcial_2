@@ -61,42 +61,44 @@ internal class Program
                 if (numero1 < aleatorio1) Console.WriteLine("Es MAYOR");
                 if (numero1 == aleatorio1) Console.WriteLine("¡HAS GANADO!");
 
-                    Console.WriteLine("Quieres un tirito mas");
-
+               
             }
-           
+            Console.Clear();
+            Console.WriteLine("Quieres un tirito mas");
+            Console.WriteLine($"haz seleccionado {jugadores} Jugadores");
+
         }
         if (jugadores == 3)
         {
             Console.WriteLine("Empecemos a jugar e ingresa numeros de 0 a 100");
-            while (aleatorio2 != numero1)
+            while (aleatorio2 != numero2)
             {
                 intentos++;
-                numero1 = int.Parse(Console.ReadLine());
-                if (numero1 > aleatorio2) Console.WriteLine("Es MENOR");
-                if (numero1 < aleatorio2) Console.WriteLine("Es MAYOR");
-                if (numero1 == aleatorio2) Console.WriteLine("¡HAS GANADO!");
-
-                Console.WriteLine("Quieres un tirito mas");
-
+                numero2 = int.Parse(Console.ReadLine());
+                if (numero2 > aleatorio2) Console.WriteLine("Es MENOR");
+                if (numero2 < aleatorio2) Console.WriteLine("Es MAYOR");
+                if (numero2 == aleatorio2) Console.WriteLine("¡HAS GANADO!");
+                               
             }
-
+            Console.Clear();
+            Console.WriteLine("Quieres un tirito mas");
+            Console.WriteLine($"haz seleccionado {jugadores} Jugadores");
         }
         if (jugadores == 4)
         {
             Console.WriteLine("Empecemos a jugar e ingresa numeros de 0 a 200");
-            while (aleatorio3 != numero1)
+            while (aleatorio3 != numero3)
             {
                 intentos++;
-                numero1 = int.Parse(Console.ReadLine());
-                if (numero1 > aleatorio3) Console.WriteLine("Es MENOR");
-                if (numero1 < aleatorio3) Console.WriteLine("Es MAYOR");
-                if (numero1 == aleatorio3) Console.WriteLine("¡HAS GANADO!");
-
-                Console.WriteLine("Quieres un tirito mas");
+                numero3 = int.Parse(Console.ReadLine());
+                if (numero3 > aleatorio3) Console.WriteLine("Es MENOR");
+                if (numero3 < aleatorio3) Console.WriteLine("Es MAYOR");
+                if (numero3 == aleatorio3) Console.WriteLine("¡HAS GANADO!");
 
             }
-
+            Console.Clear();
+            Console.WriteLine("Quieres un tirito mas");
+            Console.WriteLine($"haz seleccionado {jugadores} Jugadores");
         }
 
 
