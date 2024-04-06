@@ -30,6 +30,18 @@ palabra “¡HAS GANADO!”. Aquí ya finaliza el juego.
 El programa deberá estar en capacidad de pedir a los jugadores si desean un nuevo “tirito” para
 volver a jugar y borrar consola, de lo contrario, finalizar el programa.*/
 
-        Console.WriteLine("Hello, World!");
+        //Declaracion de variables
+        Random numero = new Random ();
+
+        int aleatorio1 = numero.Next(0, 50);
+        int aleatorio2 = numero.Next(0, 100);
+        int aleatorio3 = numero.Next(0, 200);
+
+        
+
+
+
+
+
     }
 }
