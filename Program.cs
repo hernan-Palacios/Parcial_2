@@ -52,7 +52,7 @@ internal class Program
 
         if ( jugadores == 2 )
         {
-            Console.WriteLine("Empecemos a jugar")
+            Console.WriteLine("Empecemos a jugar e ingresa numeros de 0 a 50");
             while (aleatorio1 != numero1)
             {
                 intentos++;
@@ -61,12 +61,43 @@ internal class Program
                 if (numero1 < aleatorio1) Console.WriteLine("Es MAYOR");
                 if (numero1 == aleatorio1) Console.WriteLine("¡HAS GANADO!");
 
-                    Console.WriteLine(" Quieres jugar de nuevo");
+                    Console.WriteLine("Quieres un tirito mas");
 
             }
            
         }
+        if (jugadores == 3)
+        {
+            Console.WriteLine("Empecemos a jugar e ingresa numeros de 0 a 100");
+            while (aleatorio2 != numero1)
+            {
+                intentos++;
+                numero1 = int.Parse(Console.ReadLine());
+                if (numero1 > aleatorio2) Console.WriteLine("Es MENOR");
+                if (numero1 < aleatorio2) Console.WriteLine("Es MAYOR");
+                if (numero1 == aleatorio2) Console.WriteLine("¡HAS GANADO!");
 
+                Console.WriteLine("Quieres un tirito mas");
+
+            }
+
+        }
+        if (jugadores == 4)
+        {
+            Console.WriteLine("Empecemos a jugar e ingresa numeros de 0 a 200");
+            while (aleatorio3 != numero1)
+            {
+                intentos++;
+                numero1 = int.Parse(Console.ReadLine());
+                if (numero1 > aleatorio3) Console.WriteLine("Es MENOR");
+                if (numero1 < aleatorio3) Console.WriteLine("Es MAYOR");
+                if (numero1 == aleatorio3) Console.WriteLine("¡HAS GANADO!");
+
+                Console.WriteLine("Quieres un tirito mas");
+
+            }
+
+        }
 
 
 
